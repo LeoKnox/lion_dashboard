@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Lions</title>
+    </head>
+    <body>
+        <h2>All the Lions available</h2>
+            <table style="width:70%">
+                <tr>
+                    <th>name</th>
+                    <th>color</th>
+                    <th>age</th>
+                </tr>
+                <% for (var lion of data) {%>
+                <tr>
+                    <td><%= lion.name %></td>
+                    <td><%= lion.color %></td>
+                    <td><%= lion.age %></td>
+                </tr>
+                <% } %>
+            </table>
+    </body>
+</html>

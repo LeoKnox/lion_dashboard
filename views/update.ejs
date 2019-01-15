@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Edit Me</title>
+    </head>
+    <body>
+        <h2>Welcome to <%= data %>'s page</h2>
+        <form action="/update/<%= data[0]._id %>" method="post">
+            <h4>Name:</h4>
+            <input type="text" name="name" value="<%= data[0].name %>">
+            <h4>Color:</h4>
+            <input type="text" name="color" value="<%= data[0].color %>">
+            <h4>Age:</h4>
+            <input type="text" name="age" value="<%= data[0].age %>"><br>
+            <input type="submit" value="update">
+        </form>
+    </body>
+</html>
